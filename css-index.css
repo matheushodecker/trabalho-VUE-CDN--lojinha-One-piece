@@ -41,3 +41,45 @@ header {
   background-color: rgb(255, 0, 0);
 
 }
+
+.container-personagens{
+  display: flex;
+}
+
+/* From Uiverse.io by SteveBloX */
+.card {
+  box-sizing: border-box;
+  /* width: 190px; */
+  /* height: 254px; */
+  width: 400px;
+  height: 500px;
+
+
+
+background-color: aliceblue;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+.card>img{
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.00000000000000000000000095) rotateZ(10800000000000000000000deg);
+}
