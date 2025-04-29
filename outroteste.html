@@ -65,7 +65,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" :class="{ 'active': currentPage === 'characters' }" href="#"
-                                @click="changePage('characters')">Personagens</a>
+                                @click="changePage('characters')">produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" @click="changePage('rewards')">Recompensas</a>
@@ -85,7 +85,7 @@
         </nav>
 
         <!-- Home Page (Products) -->
-        <div v-if="currentPage === 'home'">
+        <div v-if="currentPage === 'characters'">
             <div class="container my-5">
                 <h1 class="text-center mb-4 text-warning">Mercado da Grand Line</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -205,10 +205,10 @@
         </div>
 
         <!-- Characters Page -->
-        <div v-if="currentPage === 'characters'">
+        <div v-if="currentPage === 'home'">
             <div class="container-fluid p-0">
                 <div class="banner-container">
-                    <img src="assets\image\giphy.gif" alt="One Piece Banner" id="banner">
+                    <img src="imagens\luffy-chapeu.gif" alt="One Piece Banner" id="banner">
                     <h1 class="h1">Bem-vindo Nakama!</h1>
                 </div>
 
@@ -234,8 +234,8 @@
         <!-- Character Detail Page -->
         <div v-if="currentPage === 'character-detail'" class="character-detail-page">
             <div class="container">
-                <button class="btn btn-outline-warning back-button" @click="changePage('characters')">
-                    <i class="bi bi-arrow-left"></i> Voltar para Personagens
+                <button class="btn btn-outline-warning back-button" @click="changePage('home')">
+                    <i class="bi bi-arrow-left"></i> Voltar para Home
                 </button>
 
                 <div class="character-header">
