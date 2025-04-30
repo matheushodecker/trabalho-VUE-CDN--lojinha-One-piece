@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css.css">
     <style>
-        /* Estilos existentes... */
+        
         .character-detail-page {
             padding: 20px;
         }
@@ -21,7 +21,7 @@
             margin-bottom: 30px;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            border-radius: 10px;    
+            border-radius: 10px;
         }
 
         .character-header img {
@@ -48,7 +48,6 @@
 
 <body>
     <div id="app">
-        <!-- Navbar Estilo One Piece -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container" style="padding: 0px;">
                 <a class="navbar-brand" href="#" @click="changePage('home')">
@@ -103,7 +102,7 @@
                                     </button>
                                 </div>
                                 <div class="mt-2 text-end">
-                                    <small>Estoque: {{ product.stock }}</small>
+                                    <small class="text-muted">Estoque: {{ product.stock }}</small>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +268,7 @@
                                         </button>
                                     </div>
                                     <div class="mt-2 text-end">
-                                        <small>Estoque: {{ product.stock }}</small>
+                                        <small class="text-muted">Estoque: {{ product.stock }}</small>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +328,7 @@
 
                 // Produtos disponíveis
                 const products = ref([
-                    // Produtos existentes...
+               
                     {
                         id: 1,
                         title: "Figura Luffy Gear 5",
