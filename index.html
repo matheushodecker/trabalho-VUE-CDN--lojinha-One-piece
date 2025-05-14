@@ -1238,16 +1238,27 @@
         },
       }).mount("#app");
 
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register("sw.js")
-            .then((registration) =>
-              console.log("SW registered: ", registration)
-            )
-            .catch((error) => console.log("SW registration failed: ", error));
-        });
-      }
+     if ('serviceWorker' in navigator) {
+  // Registra imediatamente após o carregamento do DOM
+  document.addEventListener('DOMContentLoaded', () => {
+    const registrationTimeout = setTimeout(() => {
+      console.warn('Service worker registration timeout');
+    }, 5000); // Timeout de 5 segundos
+
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+      .then(registration => {
+        clearTimeout(registrationTimeout);
+        console.log('SW registered:', registration);
+        
+        // Verifica se há atualizações
+        registration.update();
+      })
+      .catch(error => {
+        clearTimeout(registrationTimeout);
+        console.error('SW registration failed:', error);
+      });
+  });
+}
     </script>
   </body>
 </html>
