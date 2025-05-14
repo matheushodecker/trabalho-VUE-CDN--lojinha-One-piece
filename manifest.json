@@ -1,0 +1,10 @@
+{
+  "name": "Lojinha OnePiece",
+  "theme_color": "#070707",
+  "background_color": "#ff0000",
+  "short_name": "Lojinha OnePiece",
+  "description": "uma lojinha de one piece",
+  "categories": [
+    "shopping"
+  ]
+}
