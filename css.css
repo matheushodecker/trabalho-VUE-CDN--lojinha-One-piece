@@ -1,456 +1,482 @@
+:root {
+  --primary-color: #bd1e1e;
+  --secondary-color: #2d2d2d;
+  --primary-gold: #ffd700;
+  --dark-bg: #1a1a1a;
+  --parchment: #f5e7d0;
+  --card-width: 220px;
+  --card-height: 320px;
+}
 
-        :root {
-            --primary-color: #bd1e1e;
-            --secondary-color: #2d2d2d;
-            --primary-gold: #ffd700;
-            --dark-bg: #1a1a1a;
-            --parchment: #f5e7d0;
-            --card-width: 220px;
-            --card-height: 320px;
-        }
-        
-        body {
-            background: url('https://i.pinimg.com/originals/7b/3a/2c/7b3a2c3ddee2a8b93a07c0872395d9b5.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            min-height: 100vh;
-        }
-        
-        .jolly-roger {
-            width: 80px;
-            filter: drop-shadow(2px 2px 2px black);
-        }
-        
-        .pirate-card {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid var(--primary-color);
-            transition: all 0.3s ease;
-            color: #fff;
-        }
-        
-        .pirate-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(189, 30, 30, 0.5);
-        }
-        
-        .den-den-mushi {
-            width: 100px;
-            margin: 10px;
-        }
-        
-        /* Cart Styles */
-        .container {
-            max-width: 1200px;
-            padding-bottom: 3rem;
-        }
-        
-        .pirate-header {
-            background: rgba(0, 0, 0, 0.85);
-            border: 3px solid var(--primary-color);
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            padding: 2rem;
-            margin-top: 2rem;
-            position: relative;
-            overflow: hidden;
-            color: wi;
-        }
-        
-        .pirate-header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-color), var(--primary-gold), var(--primary-color));
-        }
-        
-        .jolly-roger-sm {
-            width: 100px;
-            filter: drop-shadow(0 0 10px var(--primary-gold));
-            transition: transform 0.3s;
-        }
-        
-        .jolly-roger-sm:hover {
-            transform: rotate(10deg);
-        }
-        
-        .bounty-poster {
-            background: url('https://www.transparenttextures.com/patterns/black-paper.png'), 
-                        linear-gradient(to bottom, #2d2d2d, #1a1a1a);
-            border: 2px solid var(--primary-color);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            height: 100%;
-        }
-        
-        .bounty-poster:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(189, 30, 30, 0.4);
-        }
-        
-        .bounty-poster .card-header {
-            background: var(--primary-color);
-            font-size: 1.25rem;
-            letter-spacing: 1px;
-            border-bottom: 2px solid var(--primary-gold);
-        }
-        
-        .pirate-item {
-            background: url('https://www.transparenttextures.com/patterns/old-paper.png');
-            color: #3d2b1f;
-            padding: 1.5rem;
-        }
-        
-        .bounty-img {
-            border: 3px solid var(--primary-color);
-            border-radius: 5px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            max-height: 150px;
-            object-fit: contain;
-        }
-        
-        .input-group-text {
-            background-color: var(--dark-bg);
-            color: white;
-            border-color: var(--primary-color);
-        }
-        
+body {
+  background: url("https://i.pinimg.com/originals/7b/3a/2c/7b3a2c3ddee2a8b93a07c0872395d9b5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
 
-        
+.jolly-roger {
+  width: 80px;
+  filter: drop-shadow(2px 2px 2px black);
+}
 
+.pirate-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+  color: #fff;
+}
 
-        .form-control {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            border-color: var(--primary-color);
-        }
-        
-        .btn-outline-danger {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .btn-outline-danger:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .total-section {
-            background: url('https://www.transparenttextures.com/patterns/black-paper.png'), 
-                        rgba(0, 0, 0, 0.85);
-            border: 3px solid var(--primary-color);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .berry-icon {
-            width: 30px;
-            margin-right: 10px;
-            filter: drop-shadow(0 0 3px var(--primary-gold));
-        }
-        
-        .pirate-btn {
-            background: var(--primary-color);
-            color: white;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border: none;
-            padding: 0.75rem;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-        }
-        
-        .pirate-btn:hover {
-            background: #9e1717;
-            transform: scale(1.02);
-            box-shadow: 0 0 20px rgba(189, 30, 30, 0.6);
-        }
-        
-        .den-den-mushi-sm {
-            width: 80px;
-            filter: drop-shadow(0 0 5px var(--primary-gold));
-            margin-bottom: 1rem;
-        }
-        
-        .alert-warning {
-            background: rgba(0, 0, 0, 0.8);
-            border: 2px solid var(--primary-gold);
-            color: white;
-        }
-        
-        /* Character Page Styles */
-        .banner-container {
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
+.pirate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(189, 30, 30, 0.5);
+}
 
-        .h1 {
-            position: relative;
-            padding-top: 40vh;
-            font-size: 6rem;
-            text-align: center;
-            margin: 0;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
+.den-den-mushi {
+  width: 100px;
+  margin: 10px;
+}
 
-        #banner {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            z-index: -1;
-            border-radius: 0px;
-        }
+/* Cart Styles */
+.container {
+  max-width: 1200px;
+  padding-bottom: 3rem;
+}
 
-        header {
-            background-color: #d40000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
+.pirate-header {
+  background: rgba(0, 0, 0, 0.85);
+  border: 3px solid var(--primary-color);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  color: wi;
+}
 
-        .navbar {
-            padding: 15px 50px;
-        }
+.pirate-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--primary-gold),
+    var(--primary-color)
+  );
+}
 
-        .navbar-brand h1 {
-            font-weight: bold;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
+.jolly-roger-sm {
+  width: 100px;
+  filter: drop-shadow(0 0 10px var(--primary-gold));
+  transition: transform 0.3s;
+}
 
-        .nav-link {
-            color: white !important;
-            margin: 0 10px;
-            font-weight: 500;
-        }
+.jolly-roger-sm:hover {
+  transform: rotate(10deg);
+}
 
-        .nav-link:hover {
-            color: #ffcc00 !important;
-        }
+.bounty-poster {
+  background: url("https://www.transparenttextures.com/patterns/black-paper.png"),
+    linear-gradient(to bottom, #2d2d2d, #1a1a1a);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
 
-        img {
-            border-radius: 10px;
-            object-fit: cover;
-        }
+.bounty-poster:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(189, 30, 30, 0.4);
+}
 
-        /* Character Card styles */
-        .custom-card {
-            width: var(--card-width);
-            height: var(--card-height);
-            background: linear-gradient(135deg, #313131 0%, #1a1a1a 100%);
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: all 0.3s ease-in-out;
-            margin: 20px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            border: 2px solid transparent;
-        }
+.bounty-poster .card-header {
+  background: var(--primary-color);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--primary-gold);
+}
 
-        .custom-card:hover {
-            border-color: #d40000;
-            box-shadow: 0 15px 30px rgba(212, 0, 0, 0.3);
-        }
+.pirate-item {
+  background: url("https://www.transparenttextures.com/patterns/old-paper.png");
+  color: #3d2b1f;
+  padding: 1.5rem;
+}
 
-        .custom-card .img {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            transition: all 0.3s ease-in-out;
-            z-index: 1;
-        }
+.bounty-img {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  max-height: 150px;
+  object-fit: contain;
+}
 
-        .custom-card .textBox {
-            opacity: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: all 0.3s ease-in-out;
-            z-index: 2;
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            width: 90%;
-        }
+.input-group-text {
+  background-color: var(--dark-bg);
+  color: white;
+  border-color: var(--primary-color);
+}
 
-        .custom-card .textBox > .text {
-            font-weight: bold;
-        }
+.form-control {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-color: var(--primary-color);
+}
 
-        .custom-card .textBox > .head {
-            font-size: 1.5rem;
-            color: #ffcc00;
-            margin-bottom: 5px;
-        }
+.btn-outline-danger {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
 
-        .custom-card .textBox > .price {
-            font-size: 1.1rem;
-            color: #ffffff;
-        }
+.btn-outline-danger:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
 
-        .custom-card .textBox > span {
-            font-size: 0.9rem;
-            color: #cccccc;
-        }
+.total-section {
+  background: url("https://www.transparenttextures.com/patterns/black-paper.png"),
+    rgba(0, 0, 0, 0.85);
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
 
-        .custom-card:hover > .textBox {
-            opacity: 1;
-        }
+.berry-icon {
+  width: 30px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 3px var(--primary-gold));
+}
 
-        .custom-card:hover > .img {
-            transform: scale(1.1);
-            filter: brightness(0.7);
-        }
+.pirate-btn {
+  background: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
 
-        @keyframes anim {
-            0% {
-                transform: translateY(0) scale(1);
-            }
-            50% {
-                transform: translateY(-10px) scale(1.05);
-            }
-            100% {
-                transform: translateY(0) scale(1);
-            }
-        }
+.pirate-btn:hover {
+  background: #9e1717;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(189, 30, 30, 0.6);
+}
 
-        .custom-card:hover {
-            transform: scale(1.05) rotate(-1deg);
-            animation: anim 3s infinite;
-        }
+.den-den-mushi-sm {
+  width: 80px;
+  filter: drop-shadow(0 0 5px var(--primary-gold));
+  margin-bottom: 1rem;
+}
 
-        .custom-card:not(:hover) {
-            filter: grayscale(30%);
-            opacity: 0.9;
-        }
+.alert-warning {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--primary-gold);
+  color: white;
+}
 
-        .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px 0;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
+/* Character Page Styles */
+.banner-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
-        /* Responsive adjustments */
-        @media (max-width: 1200px) {
-            :root {
-                --card-width: 200px;
-                --card-height: 300px;
-            }
-        }
+.h1 {
+  position: relative;
+  padding-top: 40vh;
+  font-size: 6rem;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
-        @media (max-width: 992px) {
-            :root {
-                --card-width: 180px;
-                --card-height: 280px;
-            }
-            .custom-card {
-                margin: 15px;
-            }
-        }
+#banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0px;
+}
 
-        @media (max-width: 768px) {
-            :root {
-                --card-width: 160px;
-                --card-height: 260px;
-            }
-            .navbar {
-                padding: 10px 20px;
-            }
-            .h1 {
-                font-size: 4rem;
-                padding-top: 35vh;
-            }
-        }
+header {
+  background-color: #d40000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
 
-        @media (max-width: 576px) {
-            :root {
-                --card-width: 140px;
-                --card-height: 240px;
-            }
-            .custom-card {
-                margin: 10px;
-            }
-        }
-        
-        /* Notification styles */
-        .notification {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #FFD700; /* Dourado do One Piece */
-            color: #B22222; /* Vermelho escuro */
-            padding: 15px 25px;
-            border-radius: 15px 0;
-            border: 2px solid #B22222;
-            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            opacity: 0;
-            transform: translateX(100%);
-            transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-            font-family: 'Pirata One', cursive;
-            font-size: 1.2em;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .notification::before {
-            content: '';
-            background-image: url('imagens/jolly-roger-small.png');
-            width: 30px;
-            height: 30px;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        
-        .notification.show {
-            opacity: 1;
-            transform: translateX(0);
-            animation: swing 0.8s ease 1;
-        }
-        
-        @keyframes swing {
-            0%, 100% { transform: rotate(0deg) translateX(0); }
-            25% { transform: rotate(5deg) translateX(-5px); }
-            75% { transform: rotate(-5deg) translateX(5px); }
-        }
-        
-        /* Cart badge */
-        .cart-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background-color: var(--primary-gold);
-            color: black;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        
-        /* Active page indicator */
-        .nav-link.active {
-            color: var(--primary-gold) !important;
-            font-weight: bold;
-            text-decoration: underline;
-        }
+.navbar {
+  padding: 15px 50px;
+}
+
+.navbar-brand h1 {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Character Card styles */
+.custom-card {
+  width: var(--card-width);
+  height: var(--card-height);
+  background: linear-gradient(135deg, #313131 0%, #1a1a1a 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.custom-card:hover {
+  border-color: #d40000;
+  box-shadow: 0 15px 30px rgba(212, 0, 0, 0.3);
+}
+
+.custom-card .img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.custom-card .textBox {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  width: 90%;
+}
+
+.custom-card .textBox > .text {
+  font-weight: bold;
+}
+
+.custom-card .textBox > .head {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-bottom: 5px;
+}
+
+.custom-card .textBox > .price {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.custom-card .textBox > span {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.custom-card:hover > .textBox {
+  opacity: 1;
+}
+
+.custom-card:hover > .img {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.custom-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+  animation: anim 3s infinite;
+}
+
+.custom-card:not(:hover) {
+  filter: grayscale(30%);
+  opacity: 0.9;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  :root {
+    --card-width: 200px;
+    --card-height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --card-width: 180px;
+    --card-height: 280px;
+  }
+  .custom-card {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --card-width: 160px;
+    --card-height: 260px;
+  }
+  .navbar {
+    padding: 10px 20px;
+  }
+  .h1 {
+    font-size: 4rem;
+    padding-top: 35vh;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --card-width: 140px;
+    --card-height: 240px;
+  }
+  .custom-card {
+    margin: 10px;
+  }
+}
+
+/* Notification styles */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffd700; /* Dourado do One Piece */
+  color: #b22222; /* Vermelho escuro */
+  padding: 15px 25px;
+  border-radius: 15px 0;
+  border: 2px solid #b22222;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  font-family: "Pirata One", cursive;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification::before {
+  content: "";
+  background-image: url("imagens/jolly-roger-small.png");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(0);
+  animation: swing 0.8s ease 1;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+  25% {
+    transform: rotate(5deg) translateX(-5px);
+  }
+  75% {
+    transform: rotate(-5deg) translateX(5px);
+  }
+}
+
+/* Cart badge */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--primary-gold);
+  color: black;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Active page indicator */
+.nav-link.active {
+  color: var(--primary-gold) !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* Estilos PWA */
+@media all and (display-mode: standalone) {
+  body {
+    background-color: var(--dark-bg);
+  }
+
+  .navbar {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Ajuste para fullscreen PWA */
+@media (display-mode: standalone) {
+  body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+  }
+}

@@ -1,10 +1,23 @@
 {
-  "name": "Lojinha OnePiece",
-  "theme_color": "#070707",
-  "background_color": "#ff0000",
-  "short_name": "Lojinha OnePiece",
-  "description": "uma lojinha de one piece",
-  "categories": [
-    "shopping"
-  ]
+  "name": "Loja do Nakama - One Piece",
+  "short_name": "OnePieceShop",
+  "theme_color": "#bd1e1e",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "description": "A maior loja de artigos piratas da Grand Line!",
+  "icons": [
+    {
+      "src": "imagens/icons/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "imagens/icons/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["shopping", "entertainment"]
 }
