@@ -1,6 +1,7 @@
 {
   "name": "Loja do Nakama - One Piece",
   "short_name": "OnePieceShop",
+  "id": "com.suaempresa.nomeapp"
   "theme_color": "#bd1e1e",
   "background_color": "#1a1a1a",
   "display": "standalone",
