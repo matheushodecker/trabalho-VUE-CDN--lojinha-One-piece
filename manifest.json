@@ -20,5 +20,11 @@
       "type": "image/png"
     }
   ],
-  "categories": ["shopping", "entertainment"]
+  "categories": [
+    "shopping",
+    "entertainment"
+  ],
+  "orientation": "any",
+  "lang": "pt",
+  "dir": "auto"
 }
